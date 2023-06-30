@@ -1,0 +1,24 @@
+class Animal {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    speak() {
+        console.log("The animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    constructor(name, age, breed) {
+        super(name, age);
+        this.breed = breed;
+    }
+    
+    speak() {
+        console.log("The dog barks");
+    }
+}
+
+let myDog = new Dog("Max", 3, "Labrador");
+myDog.speak();
